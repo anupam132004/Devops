@@ -1,0 +1,46 @@
+# This file has imp points on GIT
+
+#Installing GIT
+
+For installing GIT in your system follow below steps:
+
+1. Download GIT setup and start installation
+
+2. (Only once while setting up) Initalize a local repo using command -
+	git init ( This creates a .git file in the setup directory of your system)
+
+3. (Only once while setting up) Create a link between local(own machine) and server(github server) using command - 
+	git remote add origin url ( Here origin is the local and url is of github project)
+
+4. For adding all files in git staging area use command -
+	git add .
+
+5. For commiting files in git staging area use command -
+	git commit -m " Comment" (Comment can be added for understanding the commit and tracking it)
+
+6. For Pushing files in git repository use command -
+	git push -u origin master (master is the github server)
+
+7. To check the status of git commands use -
+	git status (This displays the state of working directory and staging area , i.e which changes ahve been staged and which are                      pending for stage)
+
+8. To check the logs of git use -
+	git log ( This shows the status of commit history , project history)
+
+************************************************************
+
+* Before initiating any git project always perform below command -
+	git pull (This will bring sync between github project and local)
+	Pull will bring all files from master to origin finds the difference and merges the updates in current branch thus creating a        updated file in local. 
+	This bring the local branch up-to-date with its remote version.
+
+* git fetch is a similar command but  does not merges the updates .
+* git merge is followed after git fetch for merging .
+
+***************************************************************
+
++ Post creating new project in git hub if we want to copy contents of old project ue command -
+	git clone
+
++ git rebase ?
+
